@@ -5,8 +5,9 @@ import json
 import datetime
 from google.cloud import pubsub
 
+PROJECT = ''
 
-topic = 'projects/zdenky-15ba5/topics/crawled-features'
+topic = 'projects/{}/topics/crawled-features'.format(PROJECT)
 
 publisher = pubsub.PublisherClient()
 
